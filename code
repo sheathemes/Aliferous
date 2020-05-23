@@ -925,7 +925,7 @@ figcaption p {
     margin-left: calc(auto - 30px);
     margin: 40px 0;
     width: 540px;
-    color: #888;
+    color: {color:text};
     background-color: {color:posts};
     position: relative;
     padding: {select:Post Padding}px;
