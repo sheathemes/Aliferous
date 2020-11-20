@@ -139,7 +139,6 @@ CREDITS
 <meta name="select:Photoset gutter" content="8" title="8px">
 <meta name="select:Photoset gutter" content="10" title="10px">
 
-<meta name="text:header image" content="" />
 <meta name="text:header icon" content="ti-star" />
 <meta name="text:header description" content=""/> 
 <meta name="text:banner title" content=""/> 
@@ -170,7 +169,8 @@ CREDITS
 <meta name="text:CustomLink7Name" content="Link 7" />
 <meta name="text:CustomLink8URL" content="Link 8 URL" />
 <meta name="text:CustomLink8Name" content="Link 8" />
- 
+
+<meta name="image:header image" content="" /> 
 <meta name="image:background" content=""/>
 <meta name="image:sidebar" content="" />
 
@@ -1049,6 +1049,7 @@ figcaption p {
     padding: 20px;
     background-color: {color:accent};
     color: {color:accented text};
+    position: relative;
 }
  
 .ti-quote-right {
@@ -1058,6 +1059,8 @@ figcaption p {
     border-radius: 100%;
     font-size: 1.0em;
     position: absolute;
+    left: calc(50% - 10px);
+    z-index: 1;
 }
  
 .quote-box {
@@ -1613,7 +1616,7 @@ input:focus:-ms-input-placeholder { color: transparent;}
 
 <header id="main-header"> <!-----------HEADER ----------->
     <header id="header-container">
-        <section id="header-image"><img src="{text:header image}"></section>
+        <section id="header-image"><img src="{image:header image}"></section>
         <section id="header-content">
             <div id="header-title"><span class="{text:header icon}"></span>{Title}</div>
             <div id="header-description">{text:header description}</div>
@@ -1881,7 +1884,7 @@ width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
  
 {block:Answer}
 <div id="askcont">
-<div class="question"><div id="asker"><img class="ask-portrait" src="{AskerPortraitURL-64}"><span>{Asker} asked</span></div>{Question}&nbsp;</div>
+<div class="question"><div id="asker"><img class="ask-portrait" src="{AskerPortraitURL-64}"><span>{Asker} asked</span></div>{Question}</div>
 </div>
  
 {block:Answerer}
