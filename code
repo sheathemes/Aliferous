@@ -395,13 +395,13 @@ small,sub,sup {
  
 h1,h2,h3 {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.4em;
     color: {color:bold};
 }
  
 h4,h5,h6 {
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: {color:bold};
 }
  
@@ -416,7 +416,7 @@ pre {
     font-weight: 400;
     line-height: 150%;
     color: {color:pre formated text};
-    background-color:{color:pre formated background};
+    background-color: {color:pre formated background};
 }
  
 blockquote:not(.tumblr_parent) {
